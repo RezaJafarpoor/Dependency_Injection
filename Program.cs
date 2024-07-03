@@ -14,6 +14,9 @@ builder.Services.AddScoped<LifeTimeIndicator>();
 // Singleton implementation
 // builder.Services.AddSingleton<IdGenerator>();
 
+//Scope implementation
+builder.Services.AddScoped<IdGenerator>();
+
 
 
 

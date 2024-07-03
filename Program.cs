@@ -8,7 +8,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<LifeTimeIndicator>();
-builder.Services.AddTransient<IdGenerator>();
+// Transient implementation
+// builder.Services.AddTransient<IdGenerator>();
+
+// Singleton implementation
+// builder.Services.AddSingleton<IdGenerator>();
+
+
+
 
 var app = builder.Build();
 

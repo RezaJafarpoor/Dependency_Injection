@@ -6,9 +6,9 @@ namespace Dependency_Injection;
 public class LifeTimeIndicator : IActionFilter
 {
     private readonly IdGenerator _generator;
-    private readonly ILogger<LifeTimeController> _logger;
+    private readonly ILogger<LifeTimeIndicator> _logger;
 
-    public LifeTimeIndicator(IdGenerator generator, ILogger<LifeTimeController> logger)
+    public LifeTimeIndicator(IdGenerator generator, ILogger<LifeTimeIndicator> logger)
     {
         _generator = generator;
         _logger = logger;
